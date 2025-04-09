@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot-GPU-WebAPP</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
+    <div id="container">
+        <aside id="sidebar" class="hidden">
+            <div class="sidebar-top">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <button id="closesidebarbtn" aria-label="Close sidebar"><i class="ri-side-bar-line"></i></button>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><button id="newchatbtn">New Chat</button></li>
+                </ul>
+                
+                <div class="recent-chats">
+                    <h3>Recent chats</h3>
+                    <ul>
+                        <li><button class="chat-item">Vacation planning assistant</button></li>
+                        <li><button class="chat-item">Code review helper</button></li>
+                        <li><button class="chat-item">Recipe ideas</button></li>
+                    </ul>
+                </div>
+                
+                <ul class="bottom-nav">
+                    <li><button id="settingsbtn">Settings</button></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main id="chatarea">
+            <div class="top-buttons">
+                <button id="opensidebarbtn" aria-label="Open sidebar"><i class="ri-side-bar-line"></i></button>
+            </div>
+            <section id="messages" aria-live="polite"></section>
+            <div id="inputarea">
+                <div id="input-container">
+                    <input type="text" id="userinput" placeholder="Ask Anything" aria-label="Message input">
+                    <button id="sendbtn" aria-label="Send message"><i class="ri-arrow-up-line"></i></button>
+                </div>
+            </div>
+        </main>
+    </div>
     
+    <script src="../static/js/sidebar.js"></script>
 </body>
 </html>
