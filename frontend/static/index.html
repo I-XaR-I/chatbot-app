@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AI Chatbot</title>
+    <title>AI Chat Assistant</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
@@ -46,16 +46,20 @@
             <div class="top-buttons">
                 <button id="opensidebarbtn" aria-label="Open sidebar"><i class="ri-side-bar-line"></i></button>
             </div>
-            <section id="messages" aria-live="polite"></section>
+            <section id="messages" aria-live="polite">
+                <!-- Messages will be inserted here by JS -->
+            </section>
             <div id="inputarea">
                 <div id="input-container">
-                    <input type="text" id="userinput" placeholder="Ask Anything" aria-label="Message input">
-                    <button id="sendbtn" aria-label="Send message"><i class="ri-arrow-up-line"></i></button>
+                    <button id="fastModeBtn" class="fast-mode-btn" title="Toggle Fast Mode">⚡ Fast</button>
+                    <textarea id="userinput" rows="1" placeholder="Message the AI assistant..." aria-label="Message input"></textarea>
+                    <button id="sendbtn" aria-label="Send message"><i class="ri-send-plane-fill"></i></button>
                 </div>
             </div>
         </main>
     </div>
     
     <script src="../static/js/sidebar.js"></script>
+    <script src="../static/js/chat.js"></script>
 </body>
 </html>

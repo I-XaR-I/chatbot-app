@@ -1,0 +1,7 @@
+{
+  "model_name": "deepseek-ai/deepseek-r1-distill-llama-8b",
+  "type": "gguf",
+  "gguf_path": "../models/deepseek-r1-distill-llama-8b-Q4_K_M.gguf",
+  "quantization": "Q4_K_M",
+  "download_date": "2025-04-10T21:32:53.334708"
+}
