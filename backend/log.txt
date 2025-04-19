@@ -1,0 +1,668 @@
+2025-04-12 21:20:23,400 - chat_handler - INFO - Ollama service is already running
+2025-04-12 21:20:23,414 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.176:5000
+2025-04-12 21:20:23,414 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 21:20:25,154 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:25] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-12 21:20:25,415 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:25] "GET /status HTTP/1.1" 200 -
+2025-04-12 21:20:25,757 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:25] "GET /status HTTP/1.1" 200 -
+2025-04-12 21:20:26,465 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:26] "GET /status HTTP/1.1" 200 -
+2025-04-12 21:20:27,291 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:27] "GET /status HTTP/1.1" 200 -
+2025-04-12 21:20:29,995 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:29] "GET /status HTTP/1.1" 200 -
+2025-04-12 21:20:31,559 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:31] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-12 21:20:33,923 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:33] "GET /status HTTP/1.1" 200 -
+2025-04-12 21:20:34,187 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:34] "GET /status HTTP/1.1" 200 -
+2025-04-12 21:20:41,999 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:41] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-12 21:20:44,365 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:44] "GET /status HTTP/1.1" 200 -
+2025-04-12 21:20:48,829 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:48] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-12 21:20:53,724 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:53] "POST /chat HTTP/1.1" 200 -
+2025-04-12 21:20:54,636 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:54] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-12 21:20:57,008 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:57] "GET /status HTTP/1.1" 200 -
+2025-04-12 21:20:57,287 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:20:57] "GET /status HTTP/1.1" 200 -
+2025-04-12 21:21:17,273 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:21:17] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-12 21:21:19,636 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:21:19] "GET /status HTTP/1.1" 200 -
+2025-04-12 21:21:21,597 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:21:21] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-12 21:21:25,502 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:21:25] "POST /chat HTTP/1.1" 200 -
+2025-04-12 21:21:30,102 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:21:30] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-12 21:21:33,449 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:21:33] "POST /chat HTTP/1.1" 200 -
+2025-04-12 21:21:42,800 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:21:42] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-12 21:21:47,098 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 21:21:47] "POST /chat HTTP/1.1" 200 -
+2025-04-13 01:01:14,103 - chat_handler - INFO - Ollama service is already running
+2025-04-13 01:01:14,132 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.176:5000
+2025-04-13 01:01:14,133 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 01:01:28,977 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:01:28] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:01:31,281 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:01:31] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:01:35,960 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:01:35] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:01:38,309 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:01:38] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:01:40,038 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:01:40] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:01:42,424 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:01:42] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:01:47,156 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:01:47] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 01:01:47,463 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:01:47] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 01:01:47,728 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:01:47] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:01:49,836 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:01:49] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:01:55,210 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:01:55] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:01:57,566 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:01:57] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:02:01,733 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:02:01] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 01:02:05,669 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:02:05] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:02:07,869 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:02:07] "POST /chat HTTP/1.1" 200 -
+2025-04-13 01:02:08,037 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:02:08] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:02:12,638 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:02:12] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:02:14,962 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:02:14] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:02:26,124 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:02:26] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 01:02:26,437 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:02:26] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 01:02:26,702 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:02:26] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:02:28,789 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:02:28] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:02:34,941 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:02:34] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 01:02:42,937 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:02:42] "POST /chat HTTP/1.1" 200 -
+2025-04-13 01:03:19,908 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:03:19] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:03:22,292 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:03:22] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:03:24,299 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:03:24] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:03:26,664 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:03:26] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:07:13,756 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:07:13] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:07:16,063 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:07:16] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:07:25,737 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:07:25] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:07:28,091 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:07:28] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:07:28,910 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:07:28] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:07:35,717 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:07:35] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:07:38,008 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:07:38] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:07:39,971 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:07:39] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:08:49,270 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:08:49] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:08:51,570 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:08:51] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:08:58,029 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:08:58] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:09:00,396 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:00] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:09:04,045 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:04] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:09:06,428 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:06] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:09:09,583 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:09] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 01:09:09,892 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:09] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 01:09:10,159 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:10] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:09:12,273 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:12] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:09:15,702 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:15] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 01:09:16,019 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:16] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 01:09:16,284 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:16] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:09:18,381 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:18] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:09:22,088 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:22] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 01:09:22,400 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:22] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 01:09:22,663 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:22] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:09:24,777 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:24] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:09:26,107 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:26] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 01:09:26,466 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:26] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:09:28,783 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:28] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:09:29,691 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:29] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 01:09:29,999 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:29] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 01:09:30,267 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:30] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:09:32,377 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:32] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:09:44,266 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:44] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 01:09:44,576 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:44] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 01:09:44,844 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:44] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:09:46,938 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:46] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:09:48,039 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:48] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 01:09:48,387 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:48] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:09:50,693 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:50] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:09:54,589 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:09:54] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 01:10:15,160 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:10:15] "POST /chat HTTP/1.1" 200 -
+2025-04-13 01:12:06,062 - chat_handler - INFO - Ollama service is already running
+2025-04-13 01:12:06,087 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.176:5000
+2025-04-13 01:12:06,087 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 01:12:09,258 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:12:09] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:12:09,535 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:12:09] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:12:17,483 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:12:17] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:12:19,852 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:12:19] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:12:41,592 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:12:41] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:12:43,967 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:12:43] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:12:49,948 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:12:49] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 01:12:55,008 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:12:55] "POST /chat HTTP/1.1" 200 -
+2025-04-13 01:13:20,461 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:13:20] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 01:13:27,270 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:13:27] "POST /chat HTTP/1.1" 200 -
+2025-04-13 01:22:06,765 - chat_handler - INFO - Ollama service is already running
+2025-04-13 01:22:06,783 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.176:5000
+2025-04-13 01:22:06,783 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 01:22:08,364 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:22:08] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:22:08,629 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:22:08] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:22:15,389 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:22:15] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:22:15,714 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:22:15] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:22:19,404 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:22:19] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:22:21,752 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:22:21] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:22:29,172 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:22:29] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 01:22:32,396 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:22:32] "POST /chat HTTP/1.1" 200 -
+2025-04-13 01:22:41,094 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:22:41] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:22:43,442 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:22:43] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:22:45,600 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:22:45] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 01:22:55,759 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:22:55] "POST /chat HTTP/1.1" 200 -
+2025-04-13 01:23:09,121 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:23:09] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 01:23:20,795 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:23:20] "POST /chat HTTP/1.1" 200 -
+2025-04-13 01:23:31,022 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:23:31] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:23:33,401 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:23:33] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:23:47,908 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:23:47] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 01:23:58,996 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:23:58] "POST /chat HTTP/1.1" 200 -
+2025-04-13 01:27:06,527 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:27:06] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:27:08,814 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:27:08] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:28:29,971 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:28:29] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:28:30,234 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:28:30] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:11,685 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:11] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:29:12,034 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:12] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:12,424 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:12] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:13,146 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:13] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:13,974 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:13] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:14,629 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:14] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:15,457 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:15] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:16,121 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:16] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:16,948 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:16] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:29:17,288 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:17] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:17,698 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:17] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:18,417 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:18] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:19,249 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:19] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:19,908 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:19] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:20,755 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:20] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:21,387 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:21] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:22,235 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:22] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:29:22,588 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:22] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:22,993 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:22] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:23,695 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:23] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:24,536 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:24] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:25,188 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:25] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:26,049 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:26] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:26,698 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:26] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:27,524 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:27] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:29:27,871 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:27] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:28,273 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:28] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:29,010 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:29] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:29,830 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:29] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:30,470 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:30] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:31,331 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:31] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:31,956 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:31] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:32,793 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:32] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:29:33,103 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:33] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:33,374 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:33] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:33,692 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:33] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:34,413 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:34] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:35,247 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:35] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:35,899 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:35] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:36,210 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:36] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:36,692 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:36] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:37,545 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:37] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:38,184 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:38] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:29:38,454 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:38] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:39,037 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:39] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:39,680 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:39] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:40,528 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:40] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:41,178 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:41] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:42,024 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:42] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:42,661 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:42] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:43,497 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:43] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:29:43,847 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:43] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:44,236 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:44] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:44,948 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:44] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:45,794 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:45] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:46,442 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:46] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:47,293 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:47] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:47,935 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:47] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:48,748 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:48] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:29:49,056 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:49] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:49,319 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:49] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:49,634 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:49] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:50,039 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:50] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:50,744 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:50] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:51,594 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:51] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:52,232 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:52] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:53,088 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:53] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:53,732 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:53] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:54,584 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:54] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:29:54,929 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:54] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:55,328 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:55] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:56,025 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:56] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:56,874 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:56] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:57,519 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:57] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:58,363 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:58] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:58,992 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:58] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:29:59,857 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:29:59] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:30:00,199 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:00] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:00,611 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:00] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:01,315 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:01] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:02,153 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:02] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:02,803 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:02] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:03,647 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:03] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:04,307 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:04] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:05,126 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:05] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:30:05,484 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:05] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:05,882 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:05] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:06,583 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:06] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:07,432 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:07] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:08,086 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:08] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:08,915 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:08] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:09,559 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:09] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:10,399 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:10] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:30:10,712 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:10] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:10,978 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:10] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:11,298 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:11] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:12,009 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:12] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:12,841 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:12] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:13,484 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:13] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:14,331 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:14] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:14,975 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:14] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:15,821 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:15] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:30:16,166 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:16] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:16,566 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:16] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:17,280 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:17] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:18,128 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:18] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:18,768 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:18] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:19,611 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:19] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:20,246 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:20] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:21,088 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:21] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:30:21,430 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:21] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:21,836 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:21] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:22,556 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:22] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:23,381 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:23] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:24,046 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:24] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:24,877 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:24] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:25,522 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:25] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:26,364 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:26] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:30:26,715 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:26] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:27,123 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:27] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:27,840 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:27] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:28,668 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:28] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:29,330 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:29] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:30,180 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:30] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:30,813 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:30] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:31,638 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:31] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:30:31,986 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:31] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:32,380 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:32] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:33,070 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:33] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:33,917 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:33] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:34,577 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:34] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:35,404 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:35] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:36,060 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:36] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:36,887 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:36] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:30:37,246 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:37] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:37,642 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:37] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:38,369 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:38] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:39,190 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:39] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:39,850 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:39] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:40,689 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:40] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:41,326 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:41] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:42,166 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:42] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:30:42,518 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:42] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:42,923 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:42] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:43,643 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:43] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:44,504 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:44] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:45,136 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:45] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:45,978 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:45] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:46,615 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:46] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:46,895 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:46] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:47,660 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:47] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:30:47,918 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:47] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:48,382 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:48] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:49,015 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:49] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:49,861 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:49] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:50,503 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:50] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:51,367 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:51] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:52,030 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:52] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:52,863 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:52] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:30:53,189 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:53] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:53,630 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:53] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:54,347 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:54] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:55,139 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:55] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:55,774 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:55] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:56,671 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:56] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:57,353 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:57] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:58,164 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:58] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:30:58,538 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:58] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:30:58,928 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:30:58] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:31:14,734 - chat_handler - INFO - Ollama service is already running
+2025-04-13 01:31:14,753 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.176:5000
+2025-04-13 01:31:14,753 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 01:31:14,970 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:31:14] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 01:31:17,264 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:31:17] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 01:31:20,260 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:31:20] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:31:20,577 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:31:20] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:31:25,117 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:31:25] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 01:31:28,229 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:31:28] "POST /chat HTTP/1.1" 200 -
+2025-04-13 01:31:51,423 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:31:51] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:31:53,741 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:31:53] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:31:54,439 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:31:54] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:13,762 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:13] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:34:14,015 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:14] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:14,547 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:14] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:15,160 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:15] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:15,983 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:15] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:16,642 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:16] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:17,507 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:17] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:18,160 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:18] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:18,977 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:18] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:34:19,309 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:19] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:19,724 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:19] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:20,451 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:20] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:21,327 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:21] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:21,932 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:21] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:22,771 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:22] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:23,419 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:23] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:24,273 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:24] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 01:34:24,629 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:24] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:25,026 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:25] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:25,724 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:25] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:26,551 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:26] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:27,216 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:27] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:28,035 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:28] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:28,698 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:28] "GET /status HTTP/1.1" 200 -
+2025-04-13 01:34:29,562 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 01:34:29] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:02:15,717 - chat_handler - INFO - Ollama service is already running
+2025-04-13 02:02:15,741 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.176:5000
+2025-04-13 02:02:15,741 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 02:02:22,461 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:02:22] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:02:22,735 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:02:22] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:02:29,381 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:02:29] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:02:29,705 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:02:29] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:02:37,313 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:02:37] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:02:37,634 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:02:37] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:02:40,958 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:02:40] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 02:02:44,391 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:02:44] "POST /chat HTTP/1.1" 200 -
+2025-04-13 02:05:20,927 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:20] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:05:23,259 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:23] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:05:25,586 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:25] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 02:05:25,897 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:25] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 02:05:26,160 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:26] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:05:28,256 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:28] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:05:31,529 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:31] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:05:33,898 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:33] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:05:35,236 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:35] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 02:05:35,542 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:35] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 02:05:35,806 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:35] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:05:37,915 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:37] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:05:41,615 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:41] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 02:05:50,441 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:05:50] "POST /chat HTTP/1.1" 200 -
+2025-04-13 02:06:02,018 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:06:02] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 02:06:24,346 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:06:24] "POST /chat HTTP/1.1" 200 -
+2025-04-13 02:17:24,798 - chat_handler - INFO - Ollama service is already running
+2025-04-13 02:17:24,829 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.176:5000
+2025-04-13 02:17:24,829 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 02:17:36,717 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:17:36] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:17:36,974 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:17:36] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:17:38,139 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:17:38] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:17:40,524 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:17:40] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:17:44,214 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:17:44] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 02:17:44,478 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:17:44] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 02:17:44,523 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:17:44] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:17:46,853 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:17:46] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:17:48,903 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:17:48] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 02:18:08,695 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:18:08] "POST /chat HTTP/1.1" 200 -
+2025-04-13 02:23:51,945 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:23:51] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:23:54,210 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:23:54] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:23:54,721 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:23:54] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:23:57,650 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:23:57] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:23:57,920 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:23:57] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:23:58,438 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:23:58] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:23:59,092 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:23:59] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:23:59,926 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:23:59] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:24:05,209 - chat_handler - INFO - Ollama service is already running
+2025-04-13 02:24:05,224 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.176:5000
+2025-04-13 02:24:05,224 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 02:24:11,019 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:24:11] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:24:11,293 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:24:11] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:24:13,195 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:24:13] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 02:24:16,341 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:24:16] "POST /chat HTTP/1.1" 200 -
+2025-04-13 02:24:23,351 - chat_handler - INFO - TIMING [STREAM] - Request: 1744491253.5017698 - Pre-processing: 0.0002s, Inference: 9.8441s, Total: 9.8445s
+2025-04-13 02:25:24,767 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:25:24] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:25:27,071 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:25:27] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:28:43,756 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:43] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:28:46,031 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:46] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:28:46,532 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:46] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:28:51,569 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:51] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:28:51,844 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:51] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:28:52,334 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:52] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:28:53,094 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:53] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:28:54,032 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:54] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:28:54,716 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:54] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:28:55,556 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:55] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:28:56,204 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:56] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:28:57,027 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:57] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:28:57,400 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:57] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:28:57,761 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:57] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:28:58,472 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:58] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:28:59,357 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:59] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:28:59,968 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:28:59] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:00,813 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:00] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:01,484 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:01] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:02,292 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:02] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:29:02,660 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:02] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:03,066 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:03] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:03,749 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:03] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:04,593 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:04] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:05,230 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:05] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:06,078 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:06] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:06,743 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:06] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:07,572 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:07] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:29:07,928 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:07] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:08,624 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:08] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:09,473 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:09] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:10,135 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:10] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:10,959 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:10] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:11,612 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:11] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:12,422 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:12] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:13,093 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:13] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:29:13,431 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:13] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:13,699 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:13] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:14,432 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:14] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:15,236 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:15] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:19,647 - chat_handler - INFO - Ollama service is already running
+2025-04-13 02:29:19,664 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.176:5000
+2025-04-13 02:29:19,664 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 02:29:22,367 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:22] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-13 02:29:22,632 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:22] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:26,033 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:26] "GET /status HTTP/1.1" 200 -
+2025-04-13 02:29:30,287 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:30] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 02:29:32,285 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:32] "POST /chat HTTP/1.1" 200 -
+2025-04-13 02:29:37,150 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:37] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 02:29:40,008 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:40] "POST /chat HTTP/1.1" 200 -
+2025-04-13 02:29:43,387 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:43] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:29:45,756 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:45] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:29:47,397 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:47] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 02:29:47,705 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:47] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 02:29:47,970 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:47] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:29:50,056 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:50] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:29:54,122 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:54] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 02:29:58,906 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:29:58] "POST /chat HTTP/1.1" 200 -
+2025-04-13 02:30:00,497 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:30:00] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:30:02,873 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:30:02] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:30:56,910 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:30:56] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 02:30:57,226 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:30:57] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 02:30:57,494 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:30:57] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:30:59,571 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:30:59] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:31:04,497 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:04] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 02:31:16,627 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:16] "POST /chat HTTP/1.1" 200 -
+2025-04-13 02:31:20,009 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:20] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:31:22,381 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:22] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:31:25,641 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:25] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 02:31:25,951 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:25] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 02:31:26,216 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:26] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:31:28,325 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:28] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:31:33,781 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:33] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-13 02:31:38,667 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:38] "POST /chat HTTP/1.1" 200 -
+2025-04-13 02:31:42,201 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:42] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:31:44,568 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:44] "GET /models/available HTTP/1.1" 200 -
+2025-04-13 02:31:46,557 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:46] "OPTIONS /change_model HTTP/1.1" 200 -
+2025-04-13 02:31:46,868 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:46] "POST /change_model HTTP/1.1" 200 -
+2025-04-13 02:31:47,119 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:47] "GET /models/current HTTP/1.1" 200 -
+2025-04-13 02:31:49,232 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 02:31:49] "GET /models/available HTTP/1.1" 200 -
+2025-04-16 12:08:23,677 - chat_handler - INFO - Ollama service is already running
+2025-04-16 12:08:23,719 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.213.33:5000
+2025-04-16 12:08:23,719 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 12:08:28,226 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:28] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-16 12:08:28,500 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:28] "GET /status HTTP/1.1" 200 -
+2025-04-16 12:08:29,609 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:29] "GET /status HTTP/1.1" 200 -
+2025-04-16 12:08:34,482 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:34] "GET /models/current HTTP/1.1" 200 -
+2025-04-16 12:08:36,803 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:36] "GET /models/available HTTP/1.1" 200 -
+2025-04-16 12:08:44,376 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:44] "GET /models/current HTTP/1.1" 200 -
+2025-04-16 12:08:46,752 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:46] "GET /models/available HTTP/1.1" 200 -
+2025-04-16 12:08:55,888 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:55] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-16 12:08:59,813 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:59] "POST /chat HTTP/1.1" 200 -
+2025-04-16 12:12:08,708 - chat_handler - INFO - Ollama service is already running
+2025-04-16 12:12:08,727 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.213.33:5000
+2025-04-16 12:12:08,728 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 12:12:11,621 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:12:11] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-16 12:12:11,878 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:12:11] "GET /status HTTP/1.1" 200 -
+2025-04-16 12:12:17,583 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:12:17] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-16 12:12:24,664 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:12:24] "POST /chat HTTP/1.1" 200 -
+2025-04-16 12:13:02,902 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:13:02] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-16 12:13:05,881 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:13:05] "POST /chat HTTP/1.1" 200 -
+2025-04-17 10:31:52,687 - chat_handler - INFO - Ollama service is not running
+2025-04-17 10:31:52,689 - chat_handler - INFO - Ollama is not running, attempting to start it...
+2025-04-17 10:31:52,906 - chat_handler - INFO - Found Ollama in PATH: C:\Users\aakas\AppData\Local\Programs\Ollama\ollama.exe
+2025-04-17 10:31:52,907 - chat_handler - INFO - Starting Ollama from: C:\Users\aakas\AppData\Local\Programs\Ollama\ollama.exe
+2025-04-17 10:31:55,999 - chat_handler - INFO - Ollama service is already running
+2025-04-17 10:31:55,999 - chat_handler - INFO - Ollama service started successfully
+2025-04-17 10:31:56,079 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.229:5000
+2025-04-17 10:31:56,080 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-17 10:31:56,371 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:31:56] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-17 10:31:58,596 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:31:58] "GET /status HTTP/1.1" 200 -
+2025-04-17 10:32:13,984 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:32:13] "GET /models/current HTTP/1.1" 200 -
+2025-04-17 10:32:16,360 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:32:16] "GET /models/available HTTP/1.1" 200 -
+2025-04-17 13:43:46,062 - chat_handler - INFO - Ollama service is already running
+2025-04-17 13:43:46,081 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.173:5000
+2025-04-17 13:43:46,081 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-17 13:43:58,103 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:43:58] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-17 13:43:58,355 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:43:58] "GET /status HTTP/1.1" 200 -
+2025-04-17 13:44:00,788 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:44:00] "GET /status HTTP/1.1" 200 -
+2025-04-17 13:44:05,822 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:44:05] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-17 13:44:09,795 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:44:09] "POST /chat HTTP/1.1" 200 -
+2025-04-17 13:44:14,072 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:44:14] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-17 13:44:17,010 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:44:17] "POST /chat HTTP/1.1" 200 -
+2025-04-17 13:44:22,767 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:44:22] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-17 13:44:25,597 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:44:25] "POST /chat HTTP/1.1" 200 -
+2025-04-17 13:44:33,155 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:44:33] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-17 13:44:35,994 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:44:35] "POST /chat HTTP/1.1" 200 -
+2025-04-17 13:44:40,697 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:44:40] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-17 13:44:43,580 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:44:43] "POST /chat HTTP/1.1" 200 -
+2025-04-17 13:44:53,435 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:44:53] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-17 13:44:56,364 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:44:56] "POST /chat HTTP/1.1" 200 -
+2025-04-17 13:45:14,226 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:45:14] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-17 13:45:16,571 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:45:16] "GET /status HTTP/1.1" 200 -
+2025-04-17 13:45:23,790 - chat_handler - INFO - Ollama service is already running
+2025-04-17 13:45:23,812 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.173:5000
+2025-04-17 13:45:23,813 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-17 13:45:32,550 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:45:32] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-17 13:45:32,817 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:45:32] "GET /status HTTP/1.1" 200 -
+2025-04-17 13:47:12,485 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:47:12] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-17 13:47:12,753 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:47:12] "GET /status HTTP/1.1" 200 -
+2025-04-17 13:48:08,670 - chat_handler - INFO - Ollama service is already running
+2025-04-17 13:48:08,686 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.173:5000
+2025-04-17 13:48:08,686 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-17 13:48:14,551 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:48:14] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-17 13:48:14,825 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:48:14] "GET /status HTTP/1.1" 200 -
+2025-04-17 13:48:18,413 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:48:18] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-17 13:48:19,028 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:48:19] "POST /chat HTTP/1.1" 200 -
+2025-04-17 13:49:01,659 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:49:01] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-17 13:49:03,994 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:49:03] "GET /status HTTP/1.1" 200 -
+2025-04-17 13:49:09,301 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:49:09] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-17 13:49:10,087 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:49:10] "POST /chat HTTP/1.1" 200 -
+2025-04-17 13:50:01,755 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:50:01] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-17 13:50:04,100 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:50:04] "GET /status HTTP/1.1" 200 -
+2025-04-17 13:50:07,128 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:50:07] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-17 13:50:07,441 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:50:07] "GET /status HTTP/1.1" 200 -
+2025-04-17 13:50:08,398 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:50:08] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-17 13:50:09,226 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:50:09] "POST /chat HTTP/1.1" 200 -
+2025-04-17 13:50:18,724 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:50:18] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-17 13:50:21,440 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:50:21] "POST /chat HTTP/1.1" 200 -
+2025-04-17 13:50:48,012 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:50:48] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-17 13:50:50,818 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:50:50] "POST /chat HTTP/1.1" 200 -
+2025-04-17 14:12:44,884 - chat_handler - INFO - Ollama service is already running
+2025-04-17 14:12:44,902 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.173:5000
+2025-04-17 14:12:44,902 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-17 14:12:54,772 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:12:54] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-17 14:12:55,031 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:12:55] "GET /status HTTP/1.1" 200 -
+2025-04-17 14:28:36,351 - chat_handler - INFO - Starting with default model: NAME                ID              SIZE      MODIFIED   
+2025-04-17 14:28:36,363 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.173:5000
+2025-04-17 14:28:36,363 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-17 14:28:55,206 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:28:55] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:04,825 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:04] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:42,027 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:42] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:42,798 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:42] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:43,416 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:43] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:44,271 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:44] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:44,882 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:44] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:45,735 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:45] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:46,440 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:46] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:47,228 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:47] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:47,890 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:47] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:48,727 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:48] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:49,374 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:49] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:50,179 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:50] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:50,870 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:50] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:51,706 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:51] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:52,369 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:52] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:53,181 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:53] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:53,832 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:53] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:54,689 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:54] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:55,345 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:55] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:56,193 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:56] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:56,840 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:56] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:57,689 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:57] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:58,352 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:58] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:59,227 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:59] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:29:59,937 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:29:59] "[33mOPTIONS /status HTTP/1.1[0m" 404 -
+2025-04-17 14:47:47,407 - chat_handler - INFO - Ollama service is not running
+2025-04-17 14:47:47,407 - chat_handler - INFO - Ollama is not running, attempting to start it...
+2025-04-17 14:47:47,550 - chat_handler - INFO - Found Ollama in PATH: C:\Users\aakas\AppData\Local\Programs\Ollama\ollama.exe
+2025-04-17 14:47:47,550 - chat_handler - INFO - Starting Ollama from: C:\Users\aakas\AppData\Local\Programs\Ollama\ollama.exe
+2025-04-17 14:47:50,589 - chat_handler - INFO - Ollama service is already running
+2025-04-17 14:47:50,590 - chat_handler - INFO - Ollama service started successfully
+2025-04-17 14:47:50,614 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.173:5000
+2025-04-17 14:47:50,615 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-17 14:48:02,862 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:48:02] "OPTIONS /status HTTP/1.1" 200 -
+2025-04-17 14:48:03,131 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:48:03] "GET /status HTTP/1.1" 200 -
+2025-04-17 14:48:08,695 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:48:08] "GET /models/current HTTP/1.1" 200 -
+2025-04-17 14:48:11,073 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:48:11] "GET /models/available HTTP/1.1" 200 -
+2025-04-17 14:48:15,708 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:48:15] "OPTIONS /chat HTTP/1.1" 200 -
+2025-04-17 14:48:18,135 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:48:18] "POST /chat HTTP/1.1" 200 -
+2025-04-17 14:48:24,329 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:48:24] "GET /models/current HTTP/1.1" 200 -
+2025-04-17 14:48:26,697 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:48:26] "GET /models/available HTTP/1.1" 200 -

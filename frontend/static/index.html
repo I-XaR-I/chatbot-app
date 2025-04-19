@@ -11,22 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <div id="container">
         <aside id="sidebar" class="hidden">
             <div class="sidebar-top">
-                <label class="toggle-switch">
-                    <input type="checkbox" id="darkModeToggle">
-                    <span class="slider round"></span>
-                </label>
-                <button id="closesidebarbtn" aria-label="Close sidebar"><i class="ri-side-bar-line"></i></button>
+                <button id="closesidebarbtn" aria-label="Close sidebar"><i id="CSB" class="ri-side-bar-line"></i></button>
+                <button id="newchatbtn" aria-label="New chat"><i id="NCB" class="ri-chat-new-fill"></i></button>
             </div>
             <nav>
                 <ul class="main-nav">
-                    <li><button id="newchatbtn">New Chat</button></li>
                 </ul>
-                
                 <div class="recent-chats">
                     <h3>Recent chats</h3>
                     <ul>
@@ -35,30 +32,173 @@
                         <li><button class="chat-item">Recipe ideas</button></li>
                     </ul>
                 </div>
-                
                 <ul class="bottom-nav">
                     <li><button id="settingsbtn">Settings</button></li>
                 </ul>
             </nav>
         </aside>
-        
         <main id="chatarea">
             <div class="top-buttons">
                 <button id="opensidebarbtn" aria-label="Open sidebar"><i class="ri-side-bar-line"></i></button>
             </div>
+            <div id="xar-title-container">
+                <div class="xar-logo">X</div>
+                <h1 id="xar-title">XAR</h1>
+                <p class="xar-tagline">Your AI Assistant</p>
+            </div>
             <section id="messages" aria-live="polite">
-                <!-- Messages will be inserted here by JS -->
             </section>
             <div id="inputarea">
                 <div id="input-container">
-                    <button id="fastModeBtn" class="fast-mode-btn" title="Toggle Fast Mode">⚡ Fast</button>
                     <textarea id="userinput" rows="1" placeholder="Message the AI assistant..." aria-label="Message input"></textarea>
+                    <button id="voiceBtn" aria-label="Voice input"><i class="ri-mic-line"></i></button>
                     <button id="sendbtn" aria-label="Send message"><i class="ri-send-plane-fill"></i></button>
                 </div>
             </div>
         </main>
     </div>
-    
+    <div id="settingsModal" class="settings-modal">
+        <div class="settings-backdrop"></div>
+        <div class="settings-container">
+            <div class="settings-header">
+                <h2>Settings</h2>
+                <button id="closeSettingsBtn" aria-label="Close settings"><i class="ri-close-line"></i></button>
+            </div>
+            <div class="settings-content">
+                <div class="settings-sidebar">
+                    <ul>
+                        <li data-tab="general" class="active"><i class="ri-settings-4-line"></i> General</li>
+                        <li data-tab="personalization"><i class="ri-user-5-line"></i> Personalization</li>
+                        <li data-tab="speech"><i class="ri-voiceprint-line"></i> Speech</li>
+                    </ul>
+                </div>
+                <div class="settings-main">
+                    <div id="general" class="settings-tab active">
+                        <h3 class="settings-section-title">General Settings</h3>
+                        <div class="setting-group">
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <span class="setting-title">AI Model</span>
+                                    <span class="setting-description">Select the AI model for chat responses</span>
+                                </div>
+                                <div class="setting-control">
+                                    <select id="modelSelector" class="settings-select">
+                                        <option value="loading">Loading models...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <span class="setting-title">Response Length</span>
+                                    <span class="setting-description">Control how detailed the AI's responses should be</span>
+                                </div>
+                                <div class="setting-control">
+                                    <select class="settings-select">
+                                        <option>Short</option>
+                                        <option selected>Medium</option>
+                                        <option>Detailed</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <span class="setting-title">Clear Data</span>
+                                    <span class="setting-description">Delete all conversation history</span>
+                                </div>
+                                <div class="setting-control">
+                                    <button class="danger-btn">Clear All Data</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="personalization" class="settings-tab">
+                        <h3 class="settings-section-title">Personalization</h3>
+                        <div class="setting-group">
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <span class="setting-title">Theme</span>
+                                    <span class="setting-description">Choose between light and dark mode</span>
+                                </div>
+                                <div class="setting-control">
+                                    <label class="toggle-switch setting-toggle">
+                                        <input type="checkbox" id="settingsDarkMode">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <span class="setting-title">Eye Comfort Mode</span>
+                                    <span class="setting-description">Reduce blue light for easier reading</span>
+                                </div>
+                                <div class="setting-control">
+                                    <label class="toggle-switch setting-toggle">
+                                        <input type="checkbox" id="eyeComfortMode">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <span class="setting-title">Filter Intensity</span>
+                                    <span class="setting-description">Adjust the strength of blue light reduction</span>
+                                </div>
+                                <div class="setting-control">
+                                    <select id="eyeComfortIntensity" class="settings-select">
+                                        <option value="1">Normal</option>
+                                        <option value="3">High</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <span class="setting-title">Font Size</span>
+                                    <span class="setting-description">Adjust the font size of conversations</span>
+                                </div>
+                                <div class="setting-control">
+                                    <div class="range-slider-container">
+                                        <input type="range" id="fontSizeSlider" min="14" max="20" value="16" class="settings-range">
+                                        <span id="fontSizeValue" class="font-size-value">16px</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="speech" class="settings-tab">
+                        <h3 class="settings-section-title">Speech Settings</h3>
+                        <div class="setting-group">
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <span class="setting-title">Text-to-Speech</span>
+                                    <span class="setting-description">Enable voice responses from the AI</span>
+                                </div>
+                                <div class="setting-control">
+                                    <label class="toggle-switch setting-toggle">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <span class="setting-title">Voice</span>
+                                    <span class="setting-description">Select AI voice type</span>
+                                </div>
+                                <div class="setting-control">
+                                    <select class="settings-select">
+                                        <option>Default</option>
+                                        <option>Professional</option>
+                                        <option>Friendly</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/utilities.js"></script>
     <script src="../static/js/sidebar.js"></script>
     <script src="../static/js/chat.js"></script>
 </body>

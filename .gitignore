@@ -1,2 +1,4 @@
 rough.txt
 *.gguf
+models/
+OllamaSetup.exe
