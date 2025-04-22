@@ -3176,3 +3176,420 @@ input[type="range"]:focus::-moz-range-thumb {
 .dark-mode #modelSelector option[value="loading"] {
     color: var(--border-dark);
 }
+
+/* XAR Title Link styling */
+.xar-title-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+#xar-title-container.minimized .xar-title-link {
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Modern Sidebar Animations and Fillers */
+.sidebar-logo {
+    margin: 15px 0 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+}
+
+.sidebar-logo-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(180, 18, 27, 0.3);
+    position: relative;
+    overflow: hidden;
+    animation: float 3s ease-in-out infinite;
+}
+
+.sidebar-logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.7) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.logo-particles span {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    animation-iteration-count: infinite;
+}
+
+.logo-particles span:nth-child(1) {
+    top: 20%;
+    left: 25%;
+    animation-name: particle1;
+    animation-delay: 0s;
+}
+
+.logo-particles span:nth-child(2) {
+    top: 60%;
+    left: 15%;
+    animation-name: particle2;
+    animation-delay: 0.3s;
+}
+
+.logo-particles span:nth-child(3) {
+    top: 30%;
+    left: 75%;
+    animation-name: particle3;
+    animation-delay: 0.6s;
+}
+
+.logo-particles span:nth-child(4) {
+    top: 70%;
+    left: 80%;
+    animation-name: particle2;
+    animation-delay: 0.9s;
+}
+
+.logo-particles span:nth-child(5) {
+    top: 45%;
+    left: 50%;
+    animation-name: particle1;
+    animation-delay: 1.2s;
+}
+
+@keyframes particle1 {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-20px) translateX(10px);
+        opacity: 0;
+    }
+}
+
+@keyframes particle2 {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-15px) translateX(-10px);
+        opacity: 0;
+    }
+}
+
+@keyframes particle3 {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-25px) translateX(5px);
+        opacity: 0;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Suggestion Section */
+.suggestion-section {
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.suggestion-section h3 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.suggestion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    margin: 0 5px;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 0.5s ease forwards;
+}
+
+.suggestion-item:nth-child(1) { animation-delay: 0.3s; }
+.suggestion-item:nth-child(2) { animation-delay: 0.4s; }
+.suggestion-item:nth-child(3) { animation-delay: 0.5s; }
+
+.suggestion-item:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px) scale(1.02);
+    border-color: var(--primary-color);
+}
+
+.suggestion-item:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.suggestion-item i {
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.suggestion-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.suggestion-item:hover::after {
+    transform: translateX(100%);
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Info Card */
+.info-card {
+    margin: 10px 5px;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeScale 0.5s ease forwards;
+    animation-delay: 0.7s;
+}
+
+.info-card-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 10px;
+}
+
+.info-card-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.info-card-icon i {
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: pulse 2s infinite;
+}
+
+.info-card h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.info-card p {
+    font-size: 12px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.info-card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.info-card-bg::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    animation: rotate 10s linear infinite;
+}
+
+.info-card-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes fadeScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .sidebar-logo-text {
+        font-size: 20px;
+    }
+    
+    .sidebar-logo-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+    
+    .info-card p {
+        font-size: 11px;
+    }
+}
+
+/* Animate when sidebar opens */
+#sidebar.hidden .sidebar-logo,
+#sidebar.hidden .suggestion-section, 
+#sidebar.hidden .info-card {
+    opacity: 0;
+}

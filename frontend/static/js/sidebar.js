@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const eyeComfortMode = document.getElementById("eyeComfortMode");
     const eyeComfortIntensity = document.getElementById("eyeComfortIntensity");
     const eyeComfortValue = document.getElementById("eyeComfortValue");
+    const modelSelector = document.getElementById("modelSelector");
+    const xarTitleContainer = document.getElementById("xarTitleContainer");
 
     const toggleSidebar = (show) => {
         if (show) {
@@ -55,8 +57,28 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const startNewChat = () => {
+        // Clear the messages container
         messages.innerHTML = '';
+        
+        // Reset the title container if it exists
+        if (xarTitleContainer) {
+            xarTitleContainer.classList.remove('minimized');
+        }
+        
+        // Reset the user input
+        userInput.value = '';
+        userInput.style.height = 'auto';
+        
+        // Focus the input field
         userInput.focus();
+        
+        // Call global reset function to clean up any active connections and state
+        if (window.resetChatState) {
+            window.resetChatState();
+        }
+        
+        // Show notification
+        showNotification('New Chat', 'Started a new conversation');
     };
 
     function setDarkMode(isDark) {
@@ -144,6 +166,137 @@ document.addEventListener("DOMContentLoaded", () => {
                 overlay.remove();
             }
             localStorage.setItem("eyeComfortMode", "disabled");
+        }
+    }
+
+    // Add this variable to track API request state
+    let isApiRequestInProgress = false;
+    let lastApiRequestTime = 0;
+    const minApiRequestInterval = 2000; // Minimum time between API requests
+
+    async function fetchAndPopulateModels() {
+        if (!modelSelector) return;
+        
+        // Prevent rapid successive API calls
+        const now = Date.now();
+        if (isApiRequestInProgress || (now - lastApiRequestTime < minApiRequestInterval)) {
+            console.log("Skipping fetchAndPopulateModels - request already in progress or too soon");
+            return;
+        }
+        
+        isApiRequestInProgress = true;
+        lastApiRequestTime = now;
+        
+        try {
+            // Show loading state in the selector
+            modelSelector.innerHTML = '<option value="loading">Loading models...</option>';
+            
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 5000);
+            
+            const currentModelResponse = await fetch("http://localhost:5000/models/current", {
+                signal: controller.signal
+            });
+            let currentModel = "loading";
+            
+            if (currentModelResponse.ok) {
+                const currentModelData = await currentModelResponse.json();
+                currentModel = currentModelData.model;
+            }
+            
+            const response = await fetch("http://localhost:5000/models/available", {
+                signal: controller.signal
+            });
+            
+            clearTimeout(timeoutId);
+            
+            if (response.ok) {
+                const data = await response.json();
+                const models = data.models || [];
+                
+                modelSelector.innerHTML = "";
+                
+                if (models.length === 0) {
+                    const option = document.createElement("option");
+                    option.value = "no_models";
+                    option.textContent = "No models available";
+                    modelSelector.appendChild(option);
+                } else {
+                    models.forEach(model => {
+                        const option = document.createElement("option");
+                        option.value = model.name;
+                        option.textContent = model.name;
+                        if (model.name === currentModel) {
+                            option.selected = true;
+                        }
+                        modelSelector.appendChild(option);
+                    });
+                }
+                
+                showNotification("Models Loaded", `Found ${models.length} models`);
+            } else {
+                const errorData = await response.json();
+                console.error("Error loading models:", errorData);
+                modelSelector.innerHTML = '<option value="error">Error loading models</option>';
+                showNotification("Error", "Failed to load models");
+            }
+        } catch (error) {
+            console.error("Error fetching models:", error);
+            if (error.name === 'AbortError') {
+                showNotification("Request Timeout", "Server request timed out. Try again later.");
+            } else {
+                modelSelector.innerHTML = '<option value="error">Error connecting to server</option>';
+                showNotification("Error", "Failed to connect to server");
+            }
+        } finally {
+            isApiRequestInProgress = false;
+        }
+    }
+
+    async function changeModel(modelName) {
+        // Prevent rapid successive API calls
+        const now = Date.now();
+        if (isApiRequestInProgress || (now - lastApiRequestTime < minApiRequestInterval)) {
+            console.log("Skipping changeModel - request already in progress or too soon");
+            return false;
+        }
+        
+        isApiRequestInProgress = true;
+        lastApiRequestTime = now;
+        
+        try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 5000);
+            
+            const response = await fetch("http://localhost:5000/change_model", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ model: modelName }),
+                signal: controller.signal
+            });
+            
+            clearTimeout(timeoutId);
+            
+            if (response.ok) {
+                const data = await response.json();
+                showNotification("Model Changed", `Now using ${modelName}`);
+                return true;
+            } else {
+                const errorData = await response.json();
+                console.error("Error changing model:", errorData);
+                showNotification("Error", `Failed to change model: ${errorData.error || "Unknown error"}`);
+                return false;
+            }
+        } catch (error) {
+            console.error("Error changing model:", error);
+            if (error.name === 'AbortError') {
+                showNotification("Request Timeout", "Server request timed out. Try again later.");
+            } else {
+                showNotification("Error", "Failed to connect to server");
+            }
+            return false;
+        } finally {
+            isApiRequestInProgress = false;
         }
     }
 
@@ -375,11 +528,36 @@ document.addEventListener("DOMContentLoaded", () => {
             if (settingsDarkMode) {
                 settingsDarkMode.checked = document.body.classList.contains("dark-mode");
             }
+            
+            // Only fetch models when the settings modal is opened
+            // and only if the selector is empty or showing an error
+            if (modelSelector && 
+                (!modelSelector.options.length || 
+                 modelSelector.value === "error" || 
+                 modelSelector.value === "loading")) {
+                fetchAndPopulateModels();
+            }
         }, 10);
+        
+        // Add cleanup handler that runs when modal is closed
+        settingsModal.setAttribute('data-opened', 'true');
     }
 
     function closeSettingsModal() {
         settingsModal.classList.remove("active");
+        
+        // Cleanup any potential memory leaks
+        if (settingsModal.getAttribute('data-opened') === 'true') {
+            settingsModal.setAttribute('data-opened', 'false');
+            
+            // Allow time for animations to complete
+            setTimeout(() => {
+                // Force redraw to prevent memory issues
+                settingsModal.style.display = 'none';
+                settingsModal.offsetHeight; // Force reflow
+                settingsModal.style.display = '';
+            }, 500);
+        }
     }
 
     function switchSettingsTab(tabId) {
@@ -427,4 +605,146 @@ document.addEventListener("DOMContentLoaded", () => {
             setDarkMode(settingsDarkMode.checked);
         });
     }
+
+    if (modelSelector) {
+        modelSelector.addEventListener("change", async () => {
+            const selectedModel = modelSelector.value;
+            if (selectedModel && selectedModel !== "loading" && selectedModel !== "error" && selectedModel !== "no_models") {
+                // Disable the selector while changing to prevent multiple clicks
+                modelSelector.disabled = true;
+                await changeModel(selectedModel);
+                modelSelector.disabled = false;
+            }
+        });
+        
+        // DO NOT automatically fetch models on page load
+        // REMOVED: setTimeout(() => { fetchAndPopulateModels(); }, 1000);
+    }
+
+    // Fix potential memory leaks from event listeners
+    window.addEventListener("beforeunload", () => {
+        // Clean up any resources that might be causing memory issues
+        if (modelSelector) {
+            // Clear any pending model selection state
+            modelSelector.selectedIndex = 0;
+        }
+        
+        // Make sure settings modal is properly closed
+        if (settingsModal && settingsModal.classList.contains('active')) {
+            closeSettingsModal();
+        }
+        
+        // Save any user preferences
+        if (fontSizeSlider && fontSizeSlider.value) {
+            localStorage.setItem('fontSize', fontSizeSlider.value);
+        }
+    });
+
+    // Add functionality for suggestion items
+    const suggestionItems = document.querySelectorAll('.suggestion-item');
+    
+    suggestionItems.forEach(item => {
+        item.addEventListener('click', (event) => {
+            const suggestionText = item.querySelector('span').textContent;
+            const userInput = document.getElementById('userinput');
+            
+            // Add suggestion text to input
+            userInput.value = suggestionText;
+            userInput.focus();
+            
+            // Trigger input height adjustment
+            const inputEvent = new Event('input', {
+                bubbles: true,
+                cancelable: true,
+            });
+            userInput.dispatchEvent(inputEvent);
+            
+            // If on mobile, close the sidebar
+            if (window.innerWidth < 768) {
+                toggleSidebar(false);
+            }
+            
+            // Add ripple effect
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple');
+            item.appendChild(ripple);
+            
+            const rect = item.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            ripple.style.width = ripple.style.height = `${size}px`;
+            
+            const x = event.clientX - rect.left - size / 2;
+            const y = event.clientY - rect.top - size / 2;
+            
+            ripple.style.left = `${x}px`;
+            ripple.style.top = `${y}px`;
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+    });
+    
+    // Create animated particles effect for the logo
+    function animateSidebarLogo() {
+        const logoContainer = document.querySelector('.sidebar-logo-container');
+        if (!logoContainer) return;
+        
+        // Create random sparkle animations around the logo
+        setInterval(() => {
+            if (document.hidden || sidebar.classList.contains('hidden')) return;
+            
+            const sparkle = document.createElement('div');
+            sparkle.classList.add('sparkle');
+            
+            const size = Math.random() * 6 + 2;
+            sparkle.style.width = `${size}px`;
+            sparkle.style.height = `${size}px`;
+            
+            // Position around the logo randomly
+            const xPos = Math.random() * 100 - 50;
+            const yPos = Math.random() * 100 - 50;
+            sparkle.style.left = `calc(50% + ${xPos}px)`;
+            sparkle.style.top = `calc(50% + ${yPos}px)`;
+            
+            logoContainer.appendChild(sparkle);
+            
+            setTimeout(() => {
+                sparkle.remove();
+            }, 1000);
+        }, 300);
+    }
+    
+    // Start animations when sidebar is shown
+    function startSidebarAnimations() {
+        if (sidebar.classList.contains('hidden')) return;
+        animateSidebarLogo();
+    }
+    
+    // Enhance the toggleSidebar function to trigger animations
+    const originalToggleSidebar = toggleSidebar;
+    toggleSidebar = (show) => {
+        originalToggleSidebar(show);
+        if (show) {
+            // Reset animations
+            document.querySelectorAll('.suggestion-item').forEach((item, index) => {
+                item.style.animation = 'none';
+                item.offsetHeight; // Force reflow
+                item.style.animation = `slideUp 0.5s ease forwards ${0.3 + index * 0.1}s`;
+            });
+            
+            document.querySelector('.suggestion-section').style.animation = 'none';
+            document.querySelector('.suggestion-section').offsetHeight;
+            document.querySelector('.suggestion-section').style.animation = 'fadeIn 0.5s ease forwards 0.2s';
+            
+            document.querySelector('.info-card').style.animation = 'none';
+            document.querySelector('.info-card').offsetHeight;
+            document.querySelector('.info-card').style.animation = 'fadeScale 0.5s ease forwards 0.7s';
+            
+            startSidebarAnimations();
+        }
+    };
+    
+    // Initialize animations
+    startSidebarAnimations();
 });

@@ -283,7 +283,7 @@ def chat():
     
     user_input = request.json.get("message", "")
     stream_mode = request.json.get("stream", True)
-    max_tokens = min(int(request.json.get("max_tokens", 512)), 1024)
+    max_tokens = min(int(request.json.get("max_tokens", 512)), 6144)  # Increased from 1024 to 6144 (6x)
     
     if not user_input:
         return jsonify({"error": "Message is required"}), 400

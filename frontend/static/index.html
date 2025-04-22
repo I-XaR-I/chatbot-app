@@ -23,15 +23,46 @@
             </div>
             <nav>
                 <ul class="main-nav">
+                    <!-- Add a pulsating logo element -->
+                    <li class="sidebar-logo">
+                        <div class="sidebar-logo-container">
+                            <div class="sidebar-logo-icon">X</div>
+                            <div class="sidebar-logo-text">XAR</div>
+                        </div>
+                        <div class="logo-particles">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </li>
+                    
+                    <!-- Add animated suggestion section -->
+                    <li class="suggestion-section">
+                        <h3>Suggested Prompts</h3>
+                        <div class="suggestion-list">
+                            <button class="suggestion-item">
+                                <i class="ri-lightbulb-flash-line"></i>
+                                <span>Explain quantum computing</span>
+                            </button>
+                            <button class="suggestion-item">
+                                <i class="ri-creative-commons-line"></i>
+                                <span>Create a short story about AI</span>
+                            </button>
+                            <button class="suggestion-item">
+                                <i class="ri-code-box-line"></i>
+                                <span>Help me with JavaScript promises</span>
+                            </button>
+                        </div>
+                    </li>
+                    
+                    <!-- Animated information card -->
+                    <li class="info-card">
+                        <div class="info-card-content">
+                            <div class="info-card-icon"><i class="ri-ai-generate"></i></div>
+                            <h4>AI Assistant</h4>
+                            <p>Ask me anything to get intelligent and helpful responses!</p>
+                        </div>
+                        <div class="info-card-bg"></div>
+                    </li>
                 </ul>
-                <div class="recent-chats">
-                    <h3>Recent chats</h3>
-                    <ul>
-                        <li><button class="chat-item">Vacation planning assistant</button></li>
-                        <li><button class="chat-item">Code review helper</button></li>
-                        <li><button class="chat-item">Recipe ideas</button></li>
-                    </ul>
-                </div>
                 <ul class="bottom-nav">
                     <li><button id="settingsbtn">Settings</button></li>
                 </ul>
@@ -42,9 +73,11 @@
                 <button id="opensidebarbtn" aria-label="Open sidebar"><i class="ri-side-bar-line"></i></button>
             </div>
             <div id="xar-title-container">
-                <div class="xar-logo">X</div>
-                <h1 id="xar-title">XAR</h1>
-                <p class="xar-tagline">Your AI Assistant</p>
+                <a href="https://github.com/I-XaR-I/chatbot-app" target="_blank" rel="noopener noreferrer" class="xar-title-link">
+                    <div class="xar-logo">X</div>
+                    <h1 id="xar-title">XAR</h1>
+                    <p class="xar-tagline">Your AI Assistant</p>
+                </a>
             </div>
             <section id="messages" aria-live="polite">
             </section>
@@ -69,7 +102,6 @@
                     <ul>
                         <li data-tab="general" class="active"><i class="ri-settings-4-line"></i> General</li>
                         <li data-tab="personalization"><i class="ri-user-5-line"></i> Personalization</li>
-                        <li data-tab="speech"><i class="ri-voiceprint-line"></i> Speech</li>
                     </ul>
                 </div>
                 <div class="settings-main">
@@ -84,19 +116,6 @@
                                 <div class="setting-control">
                                     <select id="modelSelector" class="settings-select">
                                         <option value="loading">Loading models...</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="setting-item">
-                                <div class="setting-info">
-                                    <span class="setting-title">Response Length</span>
-                                    <span class="setting-description">Control how detailed the AI's responses should be</span>
-                                </div>
-                                <div class="setting-control">
-                                    <select class="settings-select">
-                                        <option>Short</option>
-                                        <option selected>Medium</option>
-                                        <option>Detailed</option>
                                     </select>
                                 </div>
                             </div>
@@ -160,36 +179,6 @@
                                         <input type="range" id="fontSizeSlider" min="14" max="20" value="16" class="settings-range">
                                         <span id="fontSizeValue" class="font-size-value">16px</span>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="speech" class="settings-tab">
-                        <h3 class="settings-section-title">Speech Settings</h3>
-                        <div class="setting-group">
-                            <div class="setting-item">
-                                <div class="setting-info">
-                                    <span class="setting-title">Text-to-Speech</span>
-                                    <span class="setting-description">Enable voice responses from the AI</span>
-                                </div>
-                                <div class="setting-control">
-                                    <label class="toggle-switch setting-toggle">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="setting-item">
-                                <div class="setting-info">
-                                    <span class="setting-title">Voice</span>
-                                    <span class="setting-description">Select AI voice type</span>
-                                </div>
-                                <div class="setting-control">
-                                    <select class="settings-select">
-                                        <option>Default</option>
-                                        <option>Professional</option>
-                                        <option>Friendly</option>
-                                    </select>
                                 </div>
                             </div>
                         </div>
